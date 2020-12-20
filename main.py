@@ -30,9 +30,10 @@ while (guess != generated_number):
         f'You were off by {abs(guess - generated_number)}, try again')
     try:
         guess = int(input('what is your guess at the number? '))
+        attempts += 1  # increments number of tries to keep score
     except ValueError:
         print("Please only enter whole numbers. Please try again")
-    attempts += 1  # increments number of tries to keep score
+
 
 # success message
 print(f'You Got the Number! It took you {attempts} tries')
