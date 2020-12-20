@@ -16,7 +16,6 @@ else:
 
 # initial attempt at guessing
 # TODO: sanitize input to only allow int inputs with try catch block
-# user generates a guess
 guess = int(input('what is your guess at the number? '))
 
 # loop to allow you to keep guessing until success
